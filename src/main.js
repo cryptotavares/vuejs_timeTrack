@@ -11,13 +11,13 @@ Vue.use(VueRouter)
 const router = new VueRouter()
 
 router.map({
-  '/hello': {
-    component: Hello
+  '/home': {
+    component: Home
   }
 })
 
 router.redirect({
-  '*': '/hello'
+  '*': '/home'
 })
 
 router.start(App, '#app')
